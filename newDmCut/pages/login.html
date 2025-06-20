@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiamondCut</title>
+
+    <link rel="stylesheet" href="../styling/global.css" />
+    <link rel="stylesheet" href="../styling/login.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./catalogue.html">Cars</a></li>
+          <li><a href="./showroom.html">Showroom</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a class="active" href="./login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="home">
+      <div class="header">
+        <h1>Log In</h1>
+      </div>
+      <div class="login-form">
+        <form id="login" name="login">
+          <div class="input-label">
+            <legend>Username</legend>
+            <input type="text" name="name" placeholder="Must be filled"/>
+            <p class="err" id="name"></p>
+          </div>
+          <div class="input-label">
+            <legend>Email</legend>
+            <input type="email" name="email" placeholder="Must be filled and end with @gmail.com" />
+            <p class="err" id="email"></p>
+          </div>
+          <div class="input-label">
+            <legend>Phone Number</legend>
+            <input type="tel" name="phone" placeholder="08XX"/>
+            <p class="err" id="phone"></p>
+          </div>
+          <div class="input-label">
+            <legend for="pw">Password</legend>
+            <input type="password" name="pw" id="pwd" placeholder="Input Password"/>
+            <p class="err" id="password"></p>
+          </div>
+          <div class="input-label">
+            <legend for="pw">Confirm Password</legend>
+            <input type="password" name="confirm" placeholder="Confirm Password"/>
+            <p class="err" id="confirm"></p>
+          </div>
+          <div class="termos">
+            <div class="center">
+              <input style="width: fit-content" type="checkbox" name="tos" />
+              <p>agree to terms of service</p>
+            </div>
+            <p class="err" id="tos"></p>
+          </div>
+          <button class="sub-button" type="submit">Log In</button>
+        </form>
+      </div>
+    </div>
+    
+    <script src="../script/validation.js"></script>
+  </body>
+</html>
